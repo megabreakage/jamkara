@@ -1,8 +1,14 @@
 body{
+  /*font-family: 'Merienda', cursive;*/
   margin: 0
 }
 h1,h2,h3,h4,h5,h6,p{
   text-align: center;
+}
+@media only screen and (max-width:768px) {
+  .projectImage{
+    display: none;
+  }
 }
 /*header and navigation*/
 .header{
@@ -17,6 +23,9 @@ h1,h2,h3,h4,h5,h6,p{
   float: right;
   background: rgba(255, 255, 255, 0.5);
   border-bottom-left-radius: 50px;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 .topMenu li{
   text-decoration: none;
@@ -41,6 +50,8 @@ h1,h2,h3,h4,h5,h6,p{
 .landingPage img{
   max-width: 100%;
 }
+
+/*sevice page*/
 .ourServices{
   text-align: center;
   padding-bottom: 30px;
@@ -58,13 +69,15 @@ h1,h2,h3,h4,h5,h6,p{
   border-radius: 100%;
 }
 .pageHeading{
-  padding-top: 15px;
+  padding-top: 20px;
   border-bottom: 2px solid blue;
   float: none !important;
   margin: 0 auto;
 }
+
+/*about page*/
 .about{
-  border: 1px dashed orange;
+  /*border: 1px dashed orange;*/
   padding: 0;
 }
 .aboutBackground{
@@ -77,6 +90,108 @@ h1,h2,h3,h4,h5,h6,p{
   float: none !important;
   margin: 0 auto;
 }
+.aboutButton{
+  padding: 25px;
+  text-align: center;
+}
+.vision, .mission{
+  /*display: none;*/
+  margin-top: 15px;
+  font-family: 'Merienda', cursive;
+}
+.aboutButton1{
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #000000;
+}
+
+/*projects page*/
 .projectSection{
-  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*border: 1px dashed orange;*/
+}
+.assortedProjects{
+  /*border: 1px dashed orange;*/
+  padding: 0;
+}
+.assortedProjects h3,.assortedProjects p{
+  text-align: left !important;
+}
+.projectFrame{
+  padding: 5px;
+}
+.project{
+  height: 30%;
+  background-image: url("../assets/project.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.project:hover{
+  opacity: 0.5;
+}
+.projectImageFrame{
+  margin-top: 100px;
+  /*border: 1px dashed orange;*/
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 40px;
+}
+.projectImage{
+  background-image: url("../assets/building.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*border: 1px dashed orange;*/
+}
+.projectInvisibleDiv{
+  height: 60%;
+}
+.projectsButton{
+  float: right !important;
+}
+.projectsButton button{
+  padding: 10px;
+}
+/*contacts page*/
+.contacts{
+  background-color: #EEEEEE;
+}
+.whyWork{
+  padding-top: 30px;
+  text-align: center;
+  /*border: 1px dashed orange;*/
+}
+.contactsButton1{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  /*border: 1px dashed orange;*/
+}
+.querieStatement{
+  padding: 15px;
+}
+.contactsButton2{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  /*border: 1px dashed orange;*/
+}
+.formButton{
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #000000;
+}
+.footer{
+  text-align: center;
+  padding: 10px;
+}
+.socialMedia{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.socialMedia a{
+  margin-left: 60px;
+  margin-right: 60px;
 }
