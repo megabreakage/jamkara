@@ -94,6 +94,10 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 25px;
   text-align: center;
 }
+.missionVision{
+  display: none;
+  margin-bottom: 15px;
+}
 .vision, .mission{
   /*display: none;*/
   margin-top: 15px;
