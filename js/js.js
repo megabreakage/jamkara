@@ -27,7 +27,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 5000, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -44,8 +44,22 @@ $('a[href*="#"]')
   });
   //END THE CODE FOR SMOOTH SCROLLING
 
+  //about button controls
   $("button#aboutMore").click(function() {
 		 $("#missionVision").slideDown(5000);
-     $("#divMore").slideUp(8000);
+     $("#aboutMore").fadeOut(5000);
 	 });
+
+   //get in touch button controls
+   $("button#getInTouch").click(function() {
+ 		 $("#").slideDown(5000);
+      $("#getInTouch").slideUp(8000);
+ 	 });
+
+   //contact us button controls
+   $("button#openForm").click(function() {
+     $("#divOpenForm").slideUp(3000);
+     $("#fillForm").slideDown(5000);
+ 	 });
+
 });
