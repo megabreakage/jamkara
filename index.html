@@ -210,9 +210,14 @@
       <div class="col-xs-12 col-md-7 contactsHeader pageHeading" id="contactsHeader">
         <h3>INNOVATIVE CIVIL ENGINEERING AND BUILDING SOLUTIONS</h3>
       </div>
+
+      <!-- contacts details -->
+      <div class="col-md-12 contactsDetails">
+
+      </div>
       <!-- this button should toogle the contact details -->
       <div class="contactsButton1">
-        <button type="button" name="button" class="btn btn-primary">GET IN TOUCH</button>
+        <button type="button" name="button" class="btn btn-primary" id="getInTouch">GET IN TOUCH</button>
       </div>
 
       <!-- form for suggestions comes in here -->
@@ -223,9 +228,28 @@
       <div class="querieStatement">
         <strong><p>If you have any questions or queries do not hesitate to contact us</p></strong>
       </div>
+      <div class="col-xs-12 col-md-6 contactsForm" id="fillForm">
+        <form class="form-group" action="index.html" method="post">
+          <div class="col-xs-12">
+            <input type="text" placeholder="name" class="form-control name" id="fullName" required="required">
+          </div>
+          <div class="col-xs-12">
+            <input type="email" placeholder="name@exapmple.com" class="form-control emailAddress" id="email" required="required">
+          </div>
+          <div class="col-xs-12">
+            <input type="text" placeholder="subject" class="form-control msgSubject" id="subject" required="required">
+          </div>
+          <div class="col-xs-12">
+              <textarea  class="form-control" id="description" placeholder="Enter Your Message" rows="6"></textarea>
+          </div>
+          <div class="contactsButton2">
+            <button type="button" class="btn btn-default formButton"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  	</div>
+        </form>
+      </div>
       <!-- this button should toogle the contact form -->
-      <div class="contactsButton2">
-        <button type="button" name="button" class="btn btn-lg formButton">CONTACT US NOW</button>
+      <div class="contactsButton2" id="divOpenForm">
+        <button type="button" name="button" class="btn btn-lg formButton" id="openForm">CONTACT US NOW</button>
       </div>
     </div>
 
