@@ -64,9 +64,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .iconBackground{
   margin-top: 15px;
-  height: 150px;
-  background: rgba(255, 255, 20, 0.5);
+  padding: 30px;
   border-radius: 100%;
+  /*border: 1px dashed orange;*/
 }
 .pageHeading{
   padding-top: 20px;
@@ -158,7 +158,13 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /*contacts page*/
 .contacts{
-  background-color: #EEEEEE;
+  padding: 0;
+  background-image: url("../assets/roadConstruction.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blurBackground{
+  background: rgba(255, 255, 255, 0.9);
 }
 .whyWork{
   padding-top: 30px;
