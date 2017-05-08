@@ -42,9 +42,9 @@ h1,h2,h3,h4,h5,h6,p{
 .landingPage{
   /*border: 1px dashed orange;*/
   height: 50%;
-  background-image: url("../assets/landing.jpg");
+  /*background-image: url("../assets/landing.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   padding: 0;
 }
 .landingPage img{
@@ -52,6 +52,10 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /*sevice page*/
+.iconBackground:hover, .socialMedia a:hover {
+  transform: rotate(-360deg);
+  transition: .20s;
+}
 .ourServices{
   text-align: center;
   padding-bottom: 30px;
@@ -164,12 +168,22 @@ h1,h2,h3,h4,h5,h6,p{
   background-size: cover;
 }
 .blurBackground{
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
 }
 .whyWork{
   padding-top: 30px;
   text-align: center;
   /*border: 1px dashed orange;*/
+}
+.contactsDetails{
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+.contactsDetails a{
+  text-decoration: none;
+  list-style-type: none;
 }
 .contactsButton1{
   text-align: center;

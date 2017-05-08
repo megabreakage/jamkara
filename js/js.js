@@ -3,6 +3,8 @@
 
 // user interface logic
 $(document).ready(function() {
+  //corousel code
+  $('#carouselFade').carousel();
 
   //START THE CODE FOR SMOOTH SCROLLING
 
@@ -27,7 +29,7 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 5000, function() {
+        }, 2000, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -57,8 +59,8 @@ $('a[href*="#"]')
 
   //get in touch button controls
   $("button#getInTouch").click(function() {
-    $("#").slideDown(5000);
-  $("#getInTouch").slideUp(8000);
+    $("#viewContacts").slideDown(5000);
+    $("#getInTouch").fadeOut(800);
   });
 
   //contact us button controls
