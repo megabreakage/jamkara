@@ -44,22 +44,27 @@ $('a[href*="#"]')
   });
   //END THE CODE FOR SMOOTH SCROLLING
 
+  //shakes Icons
+  $(".iconBackground").hover(function() {
+    $(this).effect("shake", { times:3 }, 100);
+  });
+
   //about button controls
   $("button#aboutMore").click(function() {
-		 $("#missionVision").slideDown(5000);
-     $("#aboutMore").fadeOut(5000);
-	 });
+    $("#missionVision").slideDown(5000);
+    $("#aboutMore").fadeOut(5000);
+	});
 
-   //get in touch button controls
-   $("button#getInTouch").click(function() {
- 		 $("#").slideDown(5000);
-      $("#getInTouch").slideUp(8000);
- 	 });
+  //get in touch button controls
+  $("button#getInTouch").click(function() {
+    $("#").slideDown(5000);
+  $("#getInTouch").slideUp(8000);
+  });
 
-   //contact us button controls
-   $("button#openForm").click(function() {
-     $("#divOpenForm").slideUp(3000);
-     $("#fillForm").slideDown(5000);
- 	 });
+  //contact us button controls
+  $("button#openForm").click(function() {
+    $("#divOpenForm").slideUp(3000);
+    $("#fillForm").slideDown(5000);
+  });
 
 });
