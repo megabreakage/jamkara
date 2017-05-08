@@ -51,8 +51,8 @@ $('a[href*="#"]')
 
   //about button controls
   $("button#aboutMore").click(function() {
-    $("#missionVision").slideDown(5000);
-    $("#aboutMore").fadeOut(5000);
+    $("#missionVision").slideDown(6000);
+    $("#aboutMore").slideUp(600);
 	});
 
   //get in touch button controls
@@ -63,7 +63,7 @@ $('a[href*="#"]')
 
   //contact us button controls
   $("button#openForm").click(function() {
-    $("#divOpenForm").slideUp(3000);
+    $("#divOpenForm").slideUp(2000);
     $("#fillForm").slideDown(5000);
   });
 
