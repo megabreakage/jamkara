@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
   <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/corousel.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -46,20 +47,26 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <div class="carousel-caption">
-                  <h3>First slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h3 class="animated bounceInRight">First slide label</h3>
+                  <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h3 class="animated bounceInLeft">Second slide label</h3>
+                  <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h3 class="animated bounceInRight">Third slide label</h3>
+                  <p></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-caption">
+                  <h3 class="animated bounceInLeft">Fourth slide label</h3>
+                  <p></p>
                 </div>
             </div>
         </div>
@@ -72,8 +79,8 @@
     <!-- Jamkara services section -->
     <div class="col-xs-12 col-md-12 ourServices" id="ourServices">
       <!-- the header label -->
-      <div class="col-xs-12 col-md-2  servicesHeader pageHeading" id="servicesHeader">
-        <h3>OUR SERVICES</h3>
+      <div class="col-xs-12 col-md-2 animated bounceInLeft  servicesHeader pageHeading" id="servicesHeader">
+        <h3 class="">OUR SERVICES</h3>
       </div>
       <!-- center align this paragraph -->
       <!-- use JS to slide the content from right to center -->
@@ -82,32 +89,32 @@
       </div>
       <!-- services icons and links -->
       <!-- use js to zoom-in on the icons -->
-      <div class="col-xs-6 col-md-3 services">
-        ROAD CONSTRUCTION
+      <div class="col-xs-6 col-md-3 animated bounceIn services">
+        <p>ROAD CONSTRUCTION</p>
         <a href="#">
           <div class="col-xs-10 col-md-6 col-md-offset-3 iconBackground">
             <img src="assets/road.png" alt="">
           </div>
         </a>
       </div>
-      <div class="col-xs-6 col-md-3 services">
-        SEWER AND DRAINAGE
+      <div class="col-xs-6 col-md-3 animated bounceIn services">
+        <p>SEWER AND DRAINAGE</p>
         <a href="#">
           <div class="col-xs-10 col-md-6 col-md-offset-3 iconBackground">
             <img src="assets/waste.png" alt="">
           </div>
         </a>
       </div>
-      <div class="col-xs-6 col-md-3 services">
-        RESIDENTIAL AND GENERAL BUILDING
+      <div class="col-xs-6 col-md-3 animated bounceIn services">
+        <p>RESIDENTIAL AND GENERAL BUILDING</p>
         <a href="#">
           <div class="col-xs-10 col-md-6 col-md-offset-3 iconBackground">
             <img src="assets/apartment.png" alt="">
           </div>
         </a>
       </div>
-      <div class="col-xs-6 col-md-3 services">
-        MACHINERY HIRE
+      <div class="col-xs-6 col-md-3 animated bounceIn services">
+        <p>MACHINERY HIRE</p>
         <a href="#">
           <div class="col-xs-10 col-md-6 col-md-offset-3 iconBackground">
             <img src="assets/tractor.png" alt="">
@@ -121,7 +128,7 @@
 
       <div class="col-xs-12 col-md-12 aboutBackground">
         <!-- the header label -->
-        <div class="col-xs-12 col-md-2 aboutHeader pageHeading" id="aboutHeader">
+        <div class="col-xs-12 col-md-2 animated bounceInLeft aboutHeader pageHeading" id="aboutHeader">
           <h3>ABOUT US</h3>
         </div>
         <!-- center align this paragraph and use -->
@@ -174,7 +181,7 @@
           </div>
         </div>
         <div class="col-md-12 aboutButton" id="divMore">
-          <button class="btn aboutButton1" id="aboutMore">read more</button>
+          <button class="btn aboutButton1" id="aboutMore"><i class="fa fa-plus" aria-hidden="true"></i> more</button>
         </div>
       </div>
 
@@ -242,7 +249,7 @@
           <h4>WHY WORK WITH US?</h4>
         </div>
         <!-- the header label -->
-        <div class="col-xs-12 col-md-7 contactsHeader pageHeading" id="contactsHeader">
+        <div class="col-xs-12 col-md-7 animated bounceInLeft contactsHeader pageHeading" id="contactsHeader">
           <h3>INNOVATIVE CIVIL ENGINEERING AND BUILDING SOLUTIONS</h3>
         </div>
 
@@ -259,21 +266,23 @@
           </div>
           <div class="col-xs-6 col-md-4 telCell">
             <i class="fa fa-phone fa-2x" aria-hidden="true"></i><br><br>
-            <a href="tel:+254727905402">(+254)727 905402</a><br><br>
-            <a href="tel:+254727922288">(+254)727 778927</a>
+
+            <a href="tel:+254727905402"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i> (+254)727 922288</a><br><br>
+            <a href="tel:+254727905402"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i> (+254)727 905402</a>
           </div>
           <div class="col-xs-6 col-md-4 website">
             <i class="fa fa-globe fa-2x" aria-hidden="true"></i><br><br>
-            <a href="http://jamkara.co.ke">www.jamkara.co.ke</a>
+            <a href="http://jamkara.co.ke">www.jamkara.co.ke</a><br><br>
+            <a href="mailto:info@jamkara.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i> info@jamkara.co.ke</a>
           </div>
         </div>
         <!-- this button should toogle the contact details -->
         <div class="contactsButton1">
-          <button type="button" name="button" class="btn btn-primary" id="getInTouch">GET IN TOUCH</button>
+          <button type="button" name="button" class="btn btn-primary" id="getInTouch"><i class="fa fa-phone" aria-hidden="true"></i> GET IN TOUCH</button>
         </div>
 
         <!-- form for suggestions comes in here -->
-        <div class="col-xs-12 col-md-3 contactsHeader pageHeading" id="contactsHeader">
+        <div class="col-xs-12 col-md-3 animated bounceInLeft contactsHeader pageHeading" id="contactsHeader">
           <h3>GET IN TOUCH WITH US</h3>
         </div>
         <!-- this paragraph should slide fron right to center -->
@@ -319,6 +328,10 @@
           <span class="fa fa-instagram fa-2x"></span>
         </a>
       </div>
+      <div class="">
+
+      </div>
+
       Copyright (c) 2017 Copyright Holder All Rights Reserved. yeah
     </div>
   </div>
