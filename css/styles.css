@@ -4,6 +4,8 @@ body{
 }
 h1,h2,h3,h4,h5,h6,p{
   text-align: center;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-delay: 1s;
 }
 @media only screen and (max-width:768px) {
   .projectImage{
@@ -42,9 +44,9 @@ h1,h2,h3,h4,h5,h6,p{
 .landingPage{
   /*border: 1px dashed orange;*/
   height: 50%;
-  /*background-image: url("../assets/landing.jpg");
+  background-image: url("../assets/landing.jpg");
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
   padding: 0;
 }
 .landingPage img{
@@ -204,7 +206,8 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 20px;
   margin: 20px;
   background: rgba(255, 255, 255, 0);
-  border: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 .contactsButton2{
   text-align: center;
