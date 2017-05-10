@@ -3,6 +3,11 @@
 
 // user interface logic
 $(document).ready(function() {
+
+  //add animated class to p
+  $('p').addClass('animated fadeIn');
+  $('h1','h2','h3','h4','h5','h6').addClass('animated bounceInLeft');
+
   //corousel code
   $('#carouselFade').carousel();
 
@@ -32,14 +37,14 @@ $('a[href*="#"]')
         }, 2000, function() {
           // Callback after animation
           // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
+          // var $target = $(target);
+          // $target.focus();
+          // if ($target.is(":focus")) { // Checking if the target was focused
+          //   return false;
+          // } else {
+          //   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          //   $target.focus(); // Set focus again
+          // };
         });
       }
     }
@@ -47,8 +52,8 @@ $('a[href*="#"]')
   //END THE CODE FOR SMOOTH SCROLLING
 
   //shakes Icons
-  $(".iconBackground").hover(function() {
-    $(this).effect("shake", { times:3 }, 100);
+  $( document ).click(function() {
+    $( "#toggle" ).toggle( "bounce", { times: 3 }, "slow" );
   });
 
   //about button controls
@@ -61,10 +66,14 @@ $('a[href*="#"]')
   $("button#getInTouch").click(function() {
     $("#viewContacts").slideDown(5000);
     $("#getInTouch").fadeOut(800);
+    $("#divOpenForm").slideDown(2000);
+    $("#fillForm").slideUp(5000);
   });
 
   //contact us button controls
   $("button#openForm").click(function() {
+    $("#viewContacts").slideUp(2000);
+    $("#getInTouch").fadeIn(800);
     $("#divOpenForm").slideUp(2000);
     $("#fillForm").slideDown(5000);
   });
