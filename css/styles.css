@@ -71,8 +71,7 @@ h1,h2,h3,h4,h5,h6,p{
 .iconBackground{
   margin-top: 15px;
   padding: 30px;
-  border-radius: 100%;
-  border: 1px dashed orange;
+  border-radius: 100%
 }
 .pageHeading{
   padding-top: 20px;
