@@ -52,8 +52,8 @@ $('a[href*="#"]')
   //END THE CODE FOR SMOOTH SCROLLING
 
   //shakes Icons
-  $( document ).click(function() {
-    $( "#toggle" ).toggle( "bounce", { times: 3 }, "slow" );
+  $('#project').click(function(){
+    $("#projectsPage").slideInRight();
   });
 
   //about button controls
