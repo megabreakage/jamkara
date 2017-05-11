@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6,p{
   margin-top: 15px;
   padding: 30px;
   border-radius: 100%;
-  /*border: 1px dashed orange;*/
+  border: 1px dashed orange;
 }
 .pageHeading{
   padding-top: 20px;
@@ -139,6 +139,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .project:hover{
   opacity: 0.5;
+  animation-name: shake;
 }
 .projectImageFrame{
   margin-top: 100px;
