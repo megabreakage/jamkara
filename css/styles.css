@@ -98,6 +98,9 @@ h1,h2,h3,h4,h5,h6,p{
 .aboutButton{
   padding: 25px;
   text-align: center;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
 }
 .missionVision{
   display: none;
@@ -161,6 +164,9 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .projectsButton button{
   padding: 10px;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
 }
 /*contacts page*/
 .contacts{
