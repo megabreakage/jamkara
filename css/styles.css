@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 0;
 }
 .landingPage{
-  height: 65%;
+  height: 50%;
   background-image: url("../assets/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
