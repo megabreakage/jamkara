@@ -231,8 +231,9 @@
               <!-- empty div -->
             </div>
             <div class="col-xs-3 col-md-3 projectsButton">
-                <input type="submit" class="btn formButton">more <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                <input type="submit" value="">
+              <form class="" action="pages/projects.html" method="post">
+                <button type="submit" class="btn formButton">more <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </form>
             </div>
           </div>
         </div>
@@ -289,7 +290,7 @@
           <strong><p>If you have any questions or queries do not hesitate to contact us</p></strong>
         </div>
         <div class="col-xs-12 col-md-6 contactsForm" id="fillForm">
-          <form class="form-group" method="post" action="mailto:martin.njau@live.com">
+          <form class="form-group" action="index.html" method="post" action="mailto:martin.njau@live.com">
             <div class="col-xs-12">
               <input type="text" placeholder="name" class="form-control name" id="fullName" required="required">
             </div>
@@ -303,13 +304,13 @@
                 <textarea  class="form-control" id="description" placeholder="Enter Your Message" rows="6"></textarea>
             </div>
             <div class="contactsButton2">
-              <button type="submit" class="btn btn-default formButton"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+              <button type="button" class="btn btn-default formButton"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
   			  	</div>
           </form>
         </div>
         <!-- this button should toogle the contact form -->
         <div class="contactsButton2" id="divOpenForm">
-          <button type="submit" value="Send" class="btn btn-lg formButton" id="openForm">CONTACT US NOW</button>
+          <button type="button" name="button" class="btn btn-lg formButton" id="openForm">CONTACT US NOW</button>
         </div>
       </div>
     </div>
