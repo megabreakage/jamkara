@@ -2,20 +2,15 @@
 
 
 // user interface logic
-$(document).ready(function() {
-
-  //add animated class to p
-  // $('p').addClass('animated fadeIn');
-  $('h1','h2','h3','h4','h5','h6').addClass('animated bounceInLeft');
-
+$(document).ready(function(e) {
   //corousel code
   $('#carouselFade').carousel();
-
-  // for loading elements on viewport
   new WOW().init();
+  //add animated class to p
+  $('.logo, h1, h2, h3, h4, h5, h6').addClass('animated wow bounceInLeft');
+  $('.topMenu, p').addClass('animated wow bounceInRight');
+  $('.services').addClass('animated wow bounceIn');
 
-  // $('h1, h2, h3, h4, h5, h6').addClass('animated wow bounceInLeft');
-  // $('p').addClass('animated wow fadeIn');
 
   //START THE CODE FOR SMOOTH SCROLLING
 
@@ -41,17 +36,11 @@ $('a[href*="#"]')
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 2000, function() {
-
         });
       }
     }
   });
   //END THE CODE FOR SMOOTH SCROLLING
-
-  //shakes Icons
-  $('#project').click(function(){
-    $("#projectsPage").slideInRight();
-  });
 
   //about button controls
   $("button#aboutMore").click(function() {
@@ -74,5 +63,5 @@ $('a[href*="#"]')
     $("#divOpenForm").slideUp(2000);
     $("#fillForm").slideDown(5000);
   });
-
+  e.preventDefault();
 });
