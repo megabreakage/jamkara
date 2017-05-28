@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6,p{
   text-decoration: none;
   list-style-type: none;
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
   .projectImage{
     display: none;
   }
@@ -65,11 +65,6 @@ a:hover{
   padding: 0;
 }
 .landingPage{
-  height: 50%;
-  background-image: url("../assets/landing.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 0;
 }
 .landingPage img{
