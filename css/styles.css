@@ -20,14 +20,38 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .logo span{
   font-size: 72px !important;
+
 }
 .logo a{
   text-decoration: none;
   list-style-type: none;
 }
+/*for mobile phones*/
 @media only screen and (max-width:800px) {
-  .projectImage{
+  ul{
+    float: none !important;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 !important;
+    border-radius: 0 !important;background: rgba(255, 255, 255, 0.8) !important;
+  }
+  .logo{
+    text-align: center;
+  }
+  .topMenu{
+    padding: 0 !important;
+  }
+  li{
+    padding: 5px 20px !important;
+  }
+  a{
+    padding: 0 !important;
+  }
+  .assortedProjects{
     display: none;
+  }
+  p, h1, h3, h4, h5, h6{
+    float: center;
   }
 }
 /*header and navigation*/
@@ -43,6 +67,7 @@ h1,h2,h3,h4,h5,h6,p{
 ul{
   float: right;
   background: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
@@ -63,28 +88,30 @@ a:hover{
 }
 .mainCanvas{
   padding: 0;
+  overflow: hidden;
+  position: absolute;
 }
 .landingPage{
   padding: 0;
 }
-.landingPage img{
-  max-width: 100%;
+.landigGlassCover{
+  height: 60vh;
 }
 
 /*sevice page*/
 .iconBackground:hover, .socialMedia a:hover {
   transform: rotate(-360deg);
-  transition: .20s;
+  transition: .80s;
 }
 .ourServices{
   text-align: center;
-  padding-bottom: 30px;
+  background: rgba(255, 255, 255, 0.8);
 }
 .jamkaraServives{
-  padding-top: 30px;
+
 }
 .services{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .iconBackground{
   margin-top: 15px;
@@ -93,7 +120,6 @@ a:hover{
 }
 .pageHeading{
   padding-top: 20px;
-  border-bottom: 2px solid #6200EA;
   float: none !important;
   margin: 0 auto;
 }
@@ -136,8 +162,7 @@ a:hover{
 
 /*projects page*/
 .projectSection{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 10vh 2vh;
   /*border: 1px dashed orange;*/
 }
 .assortedProjects{
@@ -195,11 +220,11 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   /*border: 1px dashed orange;*/
+  height: 55vh;
 }
-.projectInvisibleDiv{
-  height: 60%;
-}
+
 .projectsButton{
+  padding-top: 50px;
   float: right !important;
 }
 .projectsButton button{
@@ -215,6 +240,7 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  z-index: 100;
 }
 .blurBackground{
   background: rgba(255, 255, 255, 0.8);

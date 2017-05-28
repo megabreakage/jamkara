@@ -2,10 +2,10 @@
 
 
 // user interface logic
-$(document).ready(function(e) {
+$(document).ready(function() {
   //corousel code
   $('#carouselFade').carousel();
-  new WOW().init();
+  // new WOW().init();
   //add animated class to p
   $('.logo, h1, h2, h3, h4, h5, h6').addClass('animated wow bounceInLeft');
   $('.topMenu, p').addClass('animated wow bounceInRight');
@@ -63,5 +63,4 @@ $('a[href*="#"]')
     $("#divOpenForm").slideUp(2000);
     $("#fillForm").slideDown(5000);
   });
-  e.preventDefault();
 });
