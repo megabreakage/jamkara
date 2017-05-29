@@ -90,6 +90,7 @@ a:hover{
   position: absolute;
 }
 .landingPage{
+  position: fixed;
   padding: 0;
 }
 .landigGlassCover{
@@ -163,6 +164,7 @@ a:hover{
 /*projects page*/
 .projectSection{
   padding: 10vh 2vh;
+  background-color: #ffffff;
   /*border: 1px dashed orange;*/
 }
 .assortedProjects{
@@ -297,6 +299,7 @@ a:hover{
 .footer{
   text-align: center;
   padding: 10px;
+  background-color: #ffffff;
 }
 .socialMedia{
   text-align: center;
