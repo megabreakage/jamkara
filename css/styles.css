@@ -9,8 +9,6 @@ body{
 }
 h1,h2,h3,h4,h5,h6,p{
   text-align: center;
-  /*-webkit-animation-duration: 10s;
-  -webkit-animation-delay: 1s;*/
 }
 .logo{
   font-family: 'Euphoria Script', cursive;
@@ -95,7 +93,7 @@ a:hover{
   padding: 0;
 }
 .landigGlassCover{
-  height: 60vh;
+  height: 50vh;
 }
 
 /*sevice page*/
@@ -106,6 +104,9 @@ a:hover{
 .ourServices{
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
+}
+.servicesHeader, .aboutHeader, .contactsHeader{
+  border-bottom: 2px solid #6200EA;
 }
 .jamkaraServives{
 
@@ -126,7 +127,6 @@ a:hover{
 
 /*about page*/
 .about{
-  /*border: 1px dashed orange;*/
   padding: 0;
 }
 .aboutBackground{
