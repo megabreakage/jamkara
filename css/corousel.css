@@ -55,32 +55,38 @@
       height: 100vh;
     }
     .item:nth-child(1) {
-      background: url("../assets/const1.jpg");
+      background: url("../assets/DSC00123.JPG");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
     }
     .item:nth-child(2) {
-      background: url("../assets/const3.jpg");
+      background: url("../assets/DSC00163.JPG");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
     }
     .item:nth-child(3) {
-      background: url("../assets/const4.jpg");
+      background: url("../assets/DSC00170.JPG");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
     }
     .item:nth-child(4) {
-      background: url("../assets/const5.jpg");
+      background: url("../assets/DSC00305.JPG");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
     }
     .item:nth-child(5) {
-      background: url("../assets/const2.jpg");
+      background: url("../aassets/DSC00188.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    .item:nth-child(6) {
+      background: url("../aassets/DSC00414.JPG");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

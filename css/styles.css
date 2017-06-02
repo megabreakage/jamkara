@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
-@import url('https://fonts.googleapis.com/css?family=Rouge+Script');
-@import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script|PT+Serif|Rouge+Script');
 
 body{
-  /*font-family: 'Rouge Script', cursive;*/
   font-family: 'PT Serif', serif;
   margin: 0
 }
@@ -18,7 +15,6 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .logo span{
   font-size: 72px !important;
-
 }
 .logo a{
   text-decoration: none;
@@ -59,11 +55,12 @@ h1,h2,h3,h4,h5,h6,p{
   top: 0;
   z-index: 9999;
   font-family: 'Euphoria Script', cursive;
-  font-size: 20px;
+  font-size: 26px;
   padding: 0;
 }
 ul{
   float: right;
+  margin-top: 20px;
   background: rgba(255, 255, 255, 0.5);
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -75,7 +72,7 @@ li{
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
-  padding: 15px;
+  padding: 4px 30px;
 }
 a{
   padding: 30px;
@@ -152,9 +149,11 @@ a:hover{
   margin-bottom: 15px;
 }
 .vision, .mission{
-  /*display: none;*/
   margin-top: 15px;
-  font-family: 'Merienda', cursive;
+}
+.missionVisionTxt p{
+  font-family: 'Rouge Script', cursive;
+  font-size: 26px;
 }
 .aboutButton1{
   background: rgba(255, 255, 255, 0);
@@ -163,12 +162,10 @@ a:hover{
 
 /*projects page*/
 .projectSection{
-  padding: 10vh 2vh;
+  padding: 10px 2px;
   background-color: #ffffff;
-  /*border: 1px dashed orange;*/
 }
 .assortedProjects{
-  /*border: 1px dashed orange;*/
   padding: 0;
 }
 .assortedProjects h3,.assortedProjects p{
@@ -176,12 +173,13 @@ a:hover{
 }
 .project {
   position: relative;
+  border: 1px dashed orange;
 }
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
-  height: 33.33vh;
+  max-width: 100%;
+  height: 25%;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -212,7 +210,6 @@ a:hover{
 }
 .projectImageFrame{
   margin-top: 100px;
-  /*border: 1px dashed orange;*/
   padding-left: 0;
   padding-right: 0;
   padding-top: 40px;
@@ -295,6 +292,40 @@ a:hover{
   padding-right: 30px;
   background: rgba(255, 255, 255, 0);
   border: 2px solid #000000;
+}
+
+.projectMain{
+  border: 1px dashed blue;
+}
+.imagesFrame{
+  border: 1px dashed blue;
+}
+.image1{
+  background-image: url("../");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px dashed blue;
+  height: 40px;
+}
+.combined{
+  padding: 0;
+  border: 1px dashed red;
+}
+.image2{
+  border: 1px dashed blue;
+  height: 22px;
+}
+.image3{
+  border: 1px dashed blue;
+  height: 22px;
+}
+.image4{
+  border: 1px dashed blue;
+  height: 40px;
+}
+.textFrame{
+  height: 100%;
+  border: 1px dashed blue;
 }
 .footer{
   text-align: center;
