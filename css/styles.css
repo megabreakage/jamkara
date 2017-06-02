@@ -172,18 +172,24 @@ a:hover{
   text-align: left !important;
 }
 .project {
+  padding: 0;
   position: relative;
-  border: 1px dashed orange;
+  height: 33.33%;
 }
 .image {
+  padding: 0;
   opacity: 1;
   display: block;
-  max-width: 100%;
-  height: 25%;
+  height: 33.33%;
   transition: .5s ease;
   backface-visibility: hidden;
 }
+.project img{
+  max-width: 100%;
+  max-height: 100%
+}
 .middle {
+  padding: 0;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -210,11 +216,10 @@ a:hover{
 }
 .projectImageFrame{
   margin-top: 100px;
-  padding-left: 0;
-  padding-right: 0;
   padding-top: 40px;
 }
 .projectImage{
+  padding: 0;
   background-image: url("../assets/building.jpg");
   background-repeat: no-repeat;
   background-size: cover;
