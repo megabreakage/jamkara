@@ -4,7 +4,7 @@ body{
   font-family: 'PT Serif', serif;
   margin: 0
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6, p{
   text-align: center;
 }
 .logo{
@@ -299,39 +299,81 @@ a:hover{
   border: 2px solid #000000;
 }
 
-.projectMain{
-  border: 1px dashed blue;
-}
-.imagesFrame{
-  border: 1px dashed blue;
-}
-.image1{
-  background-image: url("../");
+/*projects page css*/
+/*-->start*/
+.projectsPage{
+  background-image: url("../assets/whiteSand.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px dashed blue;
-  height: 40px;
-}
-.combined{
+  background-attachment: fixed;
+  width: 100%;
   padding: 0;
-  border: 1px dashed red;
 }
-.image2{
-  border: 1px dashed blue;
-  height: 22px;
+.projectGlass{
+  /*border: 1px dashed orange;*/
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-.image3{
-  border: 1px dashed blue;
-  height: 22px;
+.projectNoGlass{
+  /*border: 1px dashed orange;*/
+  padding: 40px;
 }
-.image4{
-  border: 1px dashed blue;
-  height: 40px;
+.projectsImages{
+  margin-top: 3%;
+  padding: 0;
+  padding: 5px;
 }
-.textFrame{
-  height: 100%;
-  border: 1px dashed blue;
+.projectsImage1{
+  padding: 0;
+  height: 366px;
+  /*border: 1px dashed blue;*/
+  margin-bottom: 8px;
 }
+.frame1{
+  padding-right: 4px;
+}
+.frame2{
+  padding-right: 4px;
+}
+.projectsImage2{
+  padding-left: 0;
+  padding-right: 4px;
+  height: 184px;
+  /*border: 1px dashed blue;*/
+}
+.projectsImage3{
+  padding-left: 4px;
+  padding-right: 0;
+  height: 184px;
+  /*border: 1px dashed blue;*/
+}
+.projectsImagesCombined{
+  padding: 0;
+}
+.projectsInfo{
+  margin-top: 3%;
+  padding: 10px 20px;
+}
+.projectsHeader{
+  padding: 0;
+  border-bottom: 2px solid #6200EA;
+  margin-bottom: 15%;
+}
+.projectsBar{
+  border-bottom: 20px solid #6200EA;
+  border-right: 20px solid transparent;
+}
+.projectsTitle{
+}
+.projectsText p{
+  padding: 0;
+  text-align: left !important;
+}
+img{
+  width: 100% !important  ;
+}
+/*---> End*/
+
 .footer{
   text-align: center;
   padding: 10px;
