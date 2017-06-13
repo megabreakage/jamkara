@@ -110,11 +110,14 @@ a:hover{
 
 }
 .services{
-  margin-top: 20px;
+  margin-top: 5px;
+  padding: 0;
+  /*border: 1px dashed orange;*/
 }
 .iconBackground{
-  margin-top: 15px;
-  padding: 30px;
+  /*border: 1px dashed orange;*/
+  /*margin-top: 15px;*/
+  padding: 40px;
   border-radius: 100%
 }
 .pageHeading{
@@ -209,6 +212,10 @@ a:hover{
 }
 .project:hover{
   background: rgba(255, 255, 255, 0.5);
+}
+.project img:hover{
+  max-width: 101%;
+  max-height: 101%
 }
 .projectImageFrame{
   margin-top: 100px;
@@ -338,7 +345,6 @@ a:hover{
   padding-left: 0;
   padding-right: 4px;
   height: 184px;
-  /*border: 1px dashed blue;*/
 }
 .projectsImage3{
   padding-left: 4px;
@@ -363,6 +369,7 @@ a:hover{
   border-right: 20px solid transparent;
 }
 .projectsTitle{
+  letter-spacing: 2px;
 }
 .projectsText p{
   padding: 0;
@@ -378,22 +385,28 @@ img{
   padding: 0;
   text-align: center;
   background-color: #000000;
+  /*border: 1px dashed orange;*/
 }
 .socialMedia{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+  /*border: 1px dashed orange;*/
 }
 .socialMedia a{
   margin-left: 60px;
   margin-right: 60px;
 }
+.motto{
+  font-size: 16px;
+  text-shadow: 5px 5px 20px #ffffff;
+}
 .policyCredits{
   background: rgba(98, 0, 234, 0.5);
   margin-top: 40px;
-  padding: 20px 0;
+  padding-top: 10px;
+  border-top-right-radius: 20px; border-top-left-radius: 20px;
 }
 .credits{
   font-family: 'Euphoria Script', cursive;
   font-size: 18px;
-}

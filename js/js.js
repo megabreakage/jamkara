@@ -11,20 +11,6 @@ $(document).ready(function() {
   $('.topMenu, p').addClass('animated wow bounceInRight');
   $('.services').addClass('animated wow bounceIn');
 
-  // var scroll_start = 0;
-  // var startchange = $('#startchange');
-  // var offset = startchange.offset();
-  // if(startchange.length){
-  //   $(document).scroll(function(){
-  //     scroll_start = $(this).scrollTop();
-  //     if(scroll_start > offset.top){
-  //       $('.header').css('background', '#ffffff');
-  //     }else{
-  //       $('.header').css('background', 'transparent')
-  //     }
-  //   });
-  // }
-
   //START THE CODE FOR SMOOTH SCROLLING
 
   // Select all links with hashes
