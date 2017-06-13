@@ -172,7 +172,7 @@ a:hover{
   text-align: left !important;
 }
 .project {
-  padding: 0;
+  padding: 4px;
   position: relative;
   height: 33.33%;
 }
@@ -223,8 +223,7 @@ a:hover{
   background-image: url("../assets/building.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /*border: 1px dashed orange;*/
-  height: 55vh;
+  height: 65vh;
 }
 
 .projectsButton{
@@ -309,6 +308,15 @@ a:hover{
   width: 100%;
   padding: 0;
 }
+.floatingText{
+  padding: 10px 32px;
+  border-radius: 10px;
+  z-index: 1000;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .projectGlass{
   /*border: 1px dashed orange;*/
   padding: 40px;
@@ -356,11 +364,11 @@ a:hover{
 }
 .projectsHeader{
   padding: 0;
-  border-bottom: 2px solid #6200EA;
+  border-bottom: 2px solid #651FFF;
   margin-bottom: 15%;
 }
 .projectsBar{
-  border-bottom: 20px solid #6200EA;
+  border-bottom: 20px solid #651FFF;
   border-right: 20px solid transparent;
 }
 .projectsTitle{
@@ -374,10 +382,11 @@ img{
 }
 /*---> End*/
 
-.footer{
+.footerSection{
+  color: #cccccc;
+  padding: 0;
   text-align: center;
-  padding: 10px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .socialMedia{
   text-align: center;
@@ -387,4 +396,13 @@ img{
 .socialMedia a{
   margin-left: 60px;
   margin-right: 60px;
+}
+.policyCredits{
+  background: rgba(98, 0, 234, 0.5);
+  margin-top: 40px;
+  padding: 20px 0;
+}
+.credits{
+  font-family: 'Euphoria Script', cursive;
+  font-size: 18px;
 }
