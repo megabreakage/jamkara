@@ -155,14 +155,10 @@ a:hover{
   font-family: 'Rouge Script', cursive;
   font-size: 26px;
 }
-.aboutButton1{
-  background: rgba(255, 255, 255, 0);
-  border: 2px solid #000000;
-}
 
 /*projects page*/
-.projectSection{
-  padding: 10px 2px;
+.projectsSection{
+  padding: 5% 20px;
   background-color: #ffffff;
 }
 .assortedProjects{
@@ -223,18 +219,14 @@ a:hover{
   background-image: url("../assets/building.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
+  height: 60vh;
 }
 
 .projectsButton{
-  padding-top: 50px;
   float: right !important;
 }
-.projectsButton button{
-  padding: 10px;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
+.projectsButton a, .projectsButton a:link{
+  color: #000000;
 }
 /*contacts page*/
 .contacts{
@@ -292,10 +284,9 @@ a:hover{
   /*border: 1px dashed orange;*/
 }
 .formButton{
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 5px 20px !important;
   background: rgba(255, 255, 255, 0);
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
 
 /*projects page css*/
