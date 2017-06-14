@@ -405,7 +405,6 @@ img{
   background: rgba(98, 0, 234, 0.5);
   margin-top: 40px;
   padding-top: 10px;
-  border-top-right-radius: 20px; border-top-left-radius: 20px;
 }
 .credits{
   font-family: 'Euphoria Script', cursive;
