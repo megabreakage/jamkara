@@ -211,7 +211,7 @@ a:hover{
   border-radius: 5px;
 }
 .project:hover{
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .project img:hover{
   max-width: 101%;
@@ -231,9 +231,6 @@ a:hover{
 
 .projectsButton{
   float: right !important;
-}
-.projectsButton a, .projectsButton a:link{
-  color: #000000;
 }
 /*contacts page*/
 .contacts{
@@ -291,6 +288,7 @@ a:hover{
   /*border: 1px dashed orange;*/
 }
 .formButton{
+  color: #000000;
   padding: 5px 20px !important;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #000000;

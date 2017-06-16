@@ -1,6 +1,4 @@
 // business logic
-
-function _(id){return document.getElementById(id);}
 function submitForm(){
   _('send').disabled = true;
   _('status').innerHTML = 'Please Wait . . .';
@@ -25,6 +23,9 @@ function submitForm(){
 
 // user interface logic
 $(document).ready(function() {
+  $('#contactForm').submit(function(){
+    submitForm();
+  });
   //corousel code
   $('#carouselFade').carousel();
   // new WOW().init();
@@ -77,12 +78,12 @@ $('a[href*="#"]')
     $("#fillForm").slideUp(5000);
   });
 
-  //contact us button controls
-  $("button#openForm").click(function() {
-    $("#viewContacts").slideUp(2000);
-    $("#getInTouch").fadeIn(800);
-    $("#divOpenForm").slideUp(2000);
-    $("#fillForm").slideDown(5000);
-  });
+  // //contact us button controls
+  // $("button#openForm").click(function() {
+  //   $("#viewContacts").slideUp(2000);
+  //   $("#getInTouch").fadeIn(800);
+  //   $("#divOpenForm").slideUp(2000);
+  //   $("#fillForm").slideDown(5000);
+  // });
 
 });
