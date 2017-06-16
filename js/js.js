@@ -1,5 +1,27 @@
 // business logic
 
+function _(id){return document.getElementById(id);}
+function submitForm(){
+  _('send').disabled = true;
+  _('status').innerHTML = 'Please Wait . . .';
+  var formdata = new FormData();
+  formdata.apppend('name', _('name').value);
+  formdata.append('email', _('email').value);
+  formdata.append('email', _('email').value);
+  var ajax = new XHTMLHttpRequest();
+  ajax.open('POST', 'example_parser.php');
+  ajax.onreadystatechange = function(){
+    if(ajax.readystate == 4 && ajax.status == 200){
+      if (ajax.responseText == 'success') {
+        _('my_form').innerHTML = '<h2> Thanks '+_('name').value+', your message was send successfully!';
+      } else {
+        _('status').innerHTML = ajax.responseText;
+        _('send').disabled = false;
+      }
+    }
+  }
+  ajax.send(formdata);
+}
 
 // user interface logic
 $(document).ready(function() {
@@ -62,4 +84,5 @@ $('a[href*="#"]')
     $("#divOpenForm").slideUp(2000);
     $("#fillForm").slideDown(5000);
   });
+
 });
