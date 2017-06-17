@@ -1,29 +1,36 @@
 // business logic
-
+function submitForm(){
+  _('send').disabled = true;
+  _('status').innerHTML = 'Please Wait . . .';
+  var formdata = new FormData();
+  formdata.apppend('name', _('name').value);
+  formdata.append('email', _('email').value);
+  formdata.append('email', _('email').value);
+  var ajax = new XHTMLHttpRequest();
+  ajax.open('POST', 'example_parser.php');
+  ajax.onreadystatechange = function(){
+    if(ajax.readystate == 4 && ajax.status == 200){
+      if (ajax.responseText == 'success') {
+        _('my_form').innerHTML = '<h2> Thanks '+_('name').value+', your message was send successfully!';
+      } else {
+        _('status').innerHTML = ajax.responseText;
+        _('send').disabled = false;
+      }
+    }
+  }
+  ajax.send(formdata);
+}
 
 // user interface logic
 $(document).ready(function() {
+  new WOW().init();
   //corousel code
   $('#carouselFade').carousel();
-  // new WOW().init();
+
   //add animated class to p
   $('.logo, h1, h2, h3, h4, h5, h6').addClass('animated wow bounceInLeft');
   $('.topMenu, p').addClass('animated wow bounceInRight');
   $('.services').addClass('animated wow bounceIn');
-
-  // var scroll_start = 0;
-  // var startchange = $('#startchange');
-  // var offset = startchange.offset();
-  // if(startchange.length){
-  //   $(document).scroll(function(){
-  //     scroll_start = $(this).scrollTop();
-  //     if(scroll_start > offset.top){
-  //       $('.header').css('background', '#ffffff');
-  //     }else{
-  //       $('.header').css('background', 'transparent')
-  //     }
-  //   });
-  // }
 
   //START THE CODE FOR SMOOTH SCROLLING
 
@@ -67,13 +74,5 @@ $('a[href*="#"]')
     $("#getInTouch").fadeOut(800);
     $("#divOpenForm").slideDown(2000);
     $("#fillForm").slideUp(5000);
-  });
-
-  //contact us button controls
-  $("button#openForm").click(function() {
-    $("#viewContacts").slideUp(2000);
-    $("#getInTouch").fadeIn(800);
-    $("#divOpenForm").slideUp(2000);
-    $("#fillForm").slideDown(5000);
   });
 });

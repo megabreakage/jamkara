@@ -2,7 +2,6 @@
 
 body{
   font-family: 'PT Serif', serif;
-  margin: 0
 }
 h1,h2,h3,h4,h5,h6, p{
   text-align: center;
@@ -48,6 +47,7 @@ h1,h2,h3,h4,h5,h6, p{
     float: center;
   }
 }
+
 /*header and navigation*/
 .header{
   overflow: hidden;
@@ -110,11 +110,14 @@ a:hover{
 
 }
 .services{
-  margin-top: 20px;
+  margin-top: 5px;
+  padding: 0;
+  /*border: 1px dashed orange;*/
 }
 .iconBackground{
-  margin-top: 15px;
-  padding: 30px;
+  /*border: 1px dashed orange;*/
+  /*margin-top: 15px;*/
+  padding: 40px;
   border-radius: 100%
 }
 .pageHeading{
@@ -208,7 +211,11 @@ a:hover{
   border-radius: 5px;
 }
 .project:hover{
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.project img:hover{
+  max-width: 101%;
+  max-height: 101%
 }
 .projectImageFrame{
   margin-top: 100px;
@@ -224,9 +231,6 @@ a:hover{
 
 .projectsButton{
   float: right !important;
-}
-.projectsButton a, .projectsButton a:link{
-  color: #000000;
 }
 /*contacts page*/
 .contacts{
@@ -281,9 +285,9 @@ a:hover{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 70px;
-  /*border: 1px dashed orange;*/
 }
 .formButton{
+  color: #000000;
   padding: 5px 20px !important;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #000000;
@@ -296,8 +300,7 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
-  padding: 0;
+  padding: 0; 
 }
 .floatingText{
   padding: 10px 32px;
@@ -309,13 +312,12 @@ a:hover{
   background-color: rgba(255, 255, 255, 0.5);
 }
 .projectGlass{
-  /*border: 1px dashed orange;*/
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .projectNoGlass{
-  /*border: 1px dashed orange;*/
   padding: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .projectsImages{
   margin-top: 3%;
@@ -325,7 +327,6 @@ a:hover{
 .projectsImage1{
   padding: 0;
   height: 366px;
-  /*border: 1px dashed blue;*/
   margin-bottom: 8px;
 }
 .frame1{
@@ -338,13 +339,11 @@ a:hover{
   padding-left: 0;
   padding-right: 4px;
   height: 184px;
-  /*border: 1px dashed blue;*/
 }
 .projectsImage3{
   padding-left: 4px;
   padding-right: 0;
   height: 184px;
-  /*border: 1px dashed blue;*/
 }
 .projectsImagesCombined{
   padding: 0;
@@ -363,19 +362,20 @@ a:hover{
   border-right: 20px solid transparent;
 }
 .projectsTitle{
+  letter-spacing: 2px;
 }
 .projectsText p{
   padding: 0;
   text-align: left !important;
 }
 img{
-  width: 100% !important  ;
+  width: 100%;
 }
 /*---> End*/
 
 .footerSection{
   color: #cccccc;
-  padding: 0;
+  padding: 20px 0;
   text-align: center;
   background-color: #000000;
 }
@@ -388,12 +388,16 @@ img{
   margin-left: 60px;
   margin-right: 60px;
 }
+.motto{
+  font-size: 16px;
+  text-shadow: 5px 5px 20px #ffffff;
+}
 .policyCredits{
-  background: rgba(98, 0, 234, 0.5);
   margin-top: 40px;
-  padding: 20px 0;
+  padding-top: 10px;
 }
 .credits{
   font-family: 'Euphoria Script', cursive;
   font-size: 18px;
-}
+
+  /*THE END!!*/
