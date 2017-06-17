@@ -2,7 +2,6 @@
 
 body{
   font-family: 'PT Serif', serif;
-  margin: 0
 }
 h1,h2,h3,h4,h5,h6, p{
   text-align: center;
@@ -48,6 +47,7 @@ h1,h2,h3,h4,h5,h6, p{
     float: center;
   }
 }
+
 /*header and navigation*/
 .header{
   overflow: hidden;
@@ -285,7 +285,6 @@ a:hover{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 70px;
-  /*border: 1px dashed orange;*/
 }
 .formButton{
   color: #000000;
@@ -301,8 +300,7 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
-  padding: 0;
+  padding: 0; 
 }
 .floatingText{
   padding: 10px 32px;
@@ -314,13 +312,12 @@ a:hover{
   background-color: rgba(255, 255, 255, 0.5);
 }
 .projectGlass{
-  /*border: 1px dashed orange;*/
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .projectNoGlass{
-  /*border: 1px dashed orange;*/
   padding: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .projectsImages{
   margin-top: 3%;
@@ -330,7 +327,6 @@ a:hover{
 .projectsImage1{
   padding: 0;
   height: 366px;
-  /*border: 1px dashed blue;*/
   margin-bottom: 8px;
 }
 .frame1{
@@ -348,7 +344,6 @@ a:hover{
   padding-left: 4px;
   padding-right: 0;
   height: 184px;
-  /*border: 1px dashed blue;*/
 }
 .projectsImagesCombined{
   padding: 0;
@@ -374,22 +369,20 @@ a:hover{
   text-align: left !important;
 }
 img{
-  width: 100% !important  ;
+  width: 100%;
 }
 /*---> End*/
 
 .footerSection{
   color: #cccccc;
-  padding: 0;
+  padding: 20px 0;
   text-align: center;
   background-color: #000000;
-  /*border: 1px dashed orange;*/
 }
 .socialMedia{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
-  /*border: 1px dashed orange;*/
 }
 .socialMedia a{
   margin-left: 60px;
@@ -400,10 +393,11 @@ img{
   text-shadow: 5px 5px 20px #ffffff;
 }
 .policyCredits{
-  background: rgba(98, 0, 234, 0.5);
   margin-top: 40px;
   padding-top: 10px;
 }
 .credits{
   font-family: 'Euphoria Script', cursive;
   font-size: 18px;
+
+  /*THE END!!*/

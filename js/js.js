@@ -23,12 +23,10 @@ function submitForm(){
 
 // user interface logic
 $(document).ready(function() {
-  $('#contactForm').submit(function(){
-    submitForm();
-  });
+  new WOW().init();
   //corousel code
   $('#carouselFade').carousel();
-  // new WOW().init();
+
   //add animated class to p
   $('.logo, h1, h2, h3, h4, h5, h6').addClass('animated wow bounceInLeft');
   $('.topMenu, p').addClass('animated wow bounceInRight');
@@ -77,13 +75,4 @@ $('a[href*="#"]')
     $("#divOpenForm").slideDown(2000);
     $("#fillForm").slideUp(5000);
   });
-
-  // //contact us button controls
-  // $("button#openForm").click(function() {
-  //   $("#viewContacts").slideUp(2000);
-  //   $("#getInTouch").fadeIn(800);
-  //   $("#divOpenForm").slideUp(2000);
-  //   $("#fillForm").slideDown(5000);
-  // });
-
 });
