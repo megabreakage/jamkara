@@ -173,7 +173,6 @@ a:hover{
 .project {
   padding: 4px;
   position: relative;
-  height: 33.33%;
 }
 .image {
   padding: 0;
@@ -185,7 +184,6 @@ a:hover{
 }
 .project img{
   max-width: 100%;
-  max-height: 100%
 }
 .middle {
   padding: 0;
@@ -212,10 +210,6 @@ a:hover{
 }
 .project:hover{
   background-color: rgba(255, 255, 255, 0.5);
-}
-.project img:hover{
-  max-width: 101%;
-  max-height: 101%
 }
 .projectImageFrame{
   margin-top: 100px;
@@ -300,7 +294,7 @@ a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 0; 
+  padding: 0;
 }
 .floatingText{
   padding: 10px 32px;
@@ -385,8 +379,7 @@ img{
   margin-bottom: 50px;
 }
 .socialMedia a{
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 0 60px;
 }
 .motto{
   font-size: 16px;
